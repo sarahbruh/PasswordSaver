@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="212.0" prefWidth="518.0" style="-fx-background-color: #a7dafc;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerview.SettingsController">
+   <children>
+      <Text layoutX="25.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Settings">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="25.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Font size:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="115.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Min. 12px" />
+      <Text layoutX="412.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max. 20px">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Slider fx:id="fontSize" layoutX="184.0" layoutY="93.0" prefHeight="14.0" prefWidth="228.0" />
+      <SplitMenuButton fx:id="backgroundcolor" layoutX="70.0" layoutY="150.0" mnemonicParsing="false" text="Background color">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Blue" />
+          <MenuItem mnemonicParsing="false" text="Pink" />
+        </items>
+      </SplitMenuButton>
+      <SplitMenuButton fx:id="language" layoutX="298.0" layoutY="150.0" mnemonicParsing="false" text="Language">
+        <items>
+          <MenuItem mnemonicParsing="false" text="German" />
+          <MenuItem mnemonicParsing="false" text="English" />
+        </items>
+      </SplitMenuButton>
+   </children>
+</AnchorPane>

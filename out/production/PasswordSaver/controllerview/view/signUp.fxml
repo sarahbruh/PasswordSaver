@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="690.0" style="-fx-background-color: #a7dafc;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerview.signup.SignUpC">
+   <children>
+      <Text fill="RED" layoutX="269.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to PassWordSaver" wrappingWidth="382.8121337890625">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Text layoutX="333.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="291.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Master Password:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtUsername" layoutX="415.0" layoutY="205.0" promptText="username" />
+      <Button layoutX="450.0" layoutY="355.0" mnemonicParsing="false" onAction="#next" prefHeight="27.0" prefWidth="78.0" text="Sign Up" />
+      <Separator layoutX="220.0" layoutY="315.0" prefHeight="19.0" prefWidth="470.0" />
+      <Separator layoutX="220.0" layoutY="88.0" prefHeight="19.0" prefWidth="469.0" />
+      <Text layoutX="264.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign-Up" textAlignment="CENTER" wrappingWidth="382.8121337890625">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="244.0" fitWidth="424.0" layoutX="-102.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../../ressources/schluesselschloss.jpg" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="txtPassword" layoutX="415.0" layoutY="232.0" promptText="password" />
+      <Text layoutX="246.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repeat Master Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="txtReenter" layoutX="415.0" layoutY="258.0" promptText="repeat password" />
+   </children>
+</AnchorPane>
